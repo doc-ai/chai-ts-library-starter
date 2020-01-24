@@ -88,16 +88,26 @@ module.exports = {
         "@typescript-eslint/triple-slash-reference": "error",
         "@typescript-eslint/type-annotation-spacing": "off",
         "@typescript-eslint/unified-signatures": "error",
+    "array-bracket-spacing": "error",
         "arrow-parens": [
             "error",
             "as-needed"
         ],
+                    "block-spacing": "error",
+                    "brace-style": [
+                        "error",
+                        "1tbs",
+                        {
+                            "allowSingleLine": true
+                        }
+                    ],
         "camelcase": "error",
         "comma-dangle": [
             "error",
             "always-multiline"
         ],
         "complexity": "off",
+                    "computed-property-spacing": "error",
         "constructor-super": "error",
         "curly": [
             "error",
@@ -109,6 +119,7 @@ module.exports = {
             "error",
             "smart"
         ],
+    "func-call-spacing": "error",
         "guard-for-in": "error",
         "id-blacklist": [
             "error",
@@ -144,12 +155,13 @@ module.exports = {
         "no-control-regex": "error",
         "no-debugger": "error",
         "no-duplicate-imports": "error",
+    "no-else-return": "error",
         "no-empty": "off",
         "no-eval": "error",
         "no-extra-semi": "off",
         "no-fallthrough": "off",
         "no-invalid-regexp": "error",
-        "no-invalid-this": "off",
+        "no-invalid-this": "error",
         "no-irregular-whitespace": "off",
         "no-multiple-empty-lines": "error",
         "no-new-wrappers": "error",
@@ -162,6 +174,7 @@ module.exports = {
                 "hoist": "all"
             }
         ],
+    "no-sparse-arrays": "error",
         "no-throw-literal": "error",
         "no-trailing-spaces": "error",
         "no-undef-init": "error",
@@ -170,6 +183,7 @@ module.exports = {
         "no-unused-expressions": "error",
         "no-unused-labels": "error",
         "no-var": "error",
+    "object-curly-spacing": "error",
         "object-shorthand": "error",
         "one-var": [
             "error",
@@ -190,97 +204,17 @@ module.exports = {
                 "named": "never"
             }
         ],
+    "space-in-parens": "error",
         "spaced-comment": "error",
         "use-isnan": "error",
-        "valid-typeof": "off",
+        "valid-typeof": "warn",
         "@typescript-eslint/tslint/config": [
             "error",
           {
                 "rules": {
-                    "array-bracket-spacing": [
-                        true,
-                        "never"
-                    ],
-                    "block-spacing": true,
-                    "brace-style": [
-                        true,
-                        "1tbs",
-                        {
-                            "allowSingleLine": true
-                        }
-                    ],
-                    "function-name": [
-                        true,
-                        {
-                            "function-regex": {},
-                            "method-regex": {},
-                            "private-method-regex": {},
-                            "protected-method-regex": {},
-                            "static-method-regex": {}
-                        }
-                    ],
-                    "handle-callback-err": [
-                        true,
-                        "^(err|error)$"
-                    ],
-                    "import-name": true,
                     "jsdoc-format": true,
                     "no-boolean-literal-compare": true,
-                    "no-class": true,
-                    "no-duplicate-case": true,
-                    "no-else-after-return": true,
-                    "no-empty-character-class": true,
-                    "no-ex-assign": true,
-                    "no-expression-statement": [
-                        true,
-                        {
-                            "ignore-prefix": [
-                                "console.",
-                                "process.exit"
-                            ]
-                        }
-                    ],
-                    "no-extra-boolean-cast": true,
-                    "no-function-constructor-with-string-args": true,
-                    "no-increment-decrement": true,
-                    "no-inner-declarations": [
-                        true,
-                        "functions"
-                    ],
-                    "no-mixed-interface": true,
-                    "no-reference-import": true,
-                    "no-this": true,
-                    "no-unexpected-multiline": true,
-                    "object-curly-spacing": [
-                        true,
-                        "always"
-                    ],
-                    "object-shorthand-properties-first": true,
-                    "prefer-array-literal": true,
-                    "space-in-parens": [
-                        true,
-                        "never"
-                    ],
                     "strict-type-predicates": true,
-                    "ter-arrow-parens": [
-                        true,
-                        "as-needed",
-                        {
-                            "requireForBlockBody": true
-                        }
-                    ],
-                    "ter-computed-property-spacing": true,
-                    "ter-func-call-spacing": true,
-                    "ter-indent": [
-                        true,
-                        2,
-                        {
-                            "SwitchCase": 1
-                        }
-                    ],
-                    "ter-no-sparse-arrays": true,
-                    "ter-prefer-arrow-callback": true,
-                    "valid-typeof": true,
                     "whitespace": [
                         true,
                         "check-branch",

@@ -10,7 +10,7 @@ module.exports = {
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "project": "tsconfig.json",
+        "project": "./tsconfig.json",
         "sourceType": "module"
     },
     "plugins": [
@@ -19,10 +19,6 @@ module.exports = {
       "functional"
     ],
   "rules": {
-    "functional/no-mutations": "warn",
-    "functional/no-object-orientation": "error",
-    "functional/no-exceptions": "warn",
-    "functional/currying": "warn",
         "@typescript-eslint/adjacent-overload-signatures": "error",
         "@typescript-eslint/array-type": "error",
         "@typescript-eslint/await-thenable": "error",
@@ -32,7 +28,7 @@ module.exports = {
         "@typescript-eslint/consistent-type-definitions": "off",
         "@typescript-eslint/indent": [
             "error",
-            4,
+            2,
             {
                 "CallExpression": {
                     "arguments": "first"
@@ -82,7 +78,7 @@ module.exports = {
             }
         ],
         "@typescript-eslint/semi": [
-            "error",
+            "off",
             "always"
         ],
         "@typescript-eslint/space-within-parens": [
@@ -127,7 +123,6 @@ module.exports = {
             "undefined"
         ],
         "id-match": "error",
-        "import/no-deprecated": "error",
         "linebreak-style": "off",
         "max-classes-per-file": [
             "error",
@@ -180,7 +175,7 @@ module.exports = {
             "error",
             "never"
         ],
-        "prefer-arrow/prefer-arrow-functions": "error",
+        "prefer-arrow-callback": "error",
         "prefer-const": "error",
         "prefer-template": "error",
         "quote-props": [
@@ -200,7 +195,7 @@ module.exports = {
         "valid-typeof": "off",
         "@typescript-eslint/tslint/config": [
             "error",
-            {
+          {
                 "rules": {
                     "array-bracket-spacing": [
                         true,

@@ -19,7 +19,7 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
+    "lint": "eslint 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
     "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs --target es6 --theme minimal --mode file src",
     "start": "rollup -c rollup.config.ts -w",
@@ -87,17 +87,26 @@
     "@commitlint/config-conventional": "^8.3.4",
     "@types/jest": "^24.9.1",
     "@types/node": "^13.5.0",
+    "@typescript-eslint/eslint-plugin": "^2.17.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^2.17.0",
+    "@typescript-eslint/parser": "^2.17.0",
     "colors": "^1.4.0",
     "commitizen": "^4.0.3",
     "coveralls": "^3.0.9",
     "cross-env": "^6.0.3",
     "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-functional": "^3.0.1",
     "husky": "^4.2.1",
     "jest": "^25.1.0",
     "jest-config": "^25.1.0",
     "lint-staged": "^10.0.2",
     "lodash.camelcase": "^4.3.0",
     "prettier": "^1.19.1",
+    "prettier-eslint": "^9.0.1",
     "prompt": "^1.0.0",
     "replace-in-file": "^5.0.2",
     "rimraf": "^3.0.0",
@@ -113,10 +122,8 @@
     "ts-jest": "^25.0.0",
     "ts-node": "^8.6.2",
     "tslint": "^6.0.0",
-    "tslint-config-airbnb": "^5.11.2",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-config-standard": "^9.0.0",
     "typedoc": "^0.16.8",
     "typescript": "^3.7.5"
-  }
+  },
+  "dependencies": {}
 }

@@ -41,7 +41,7 @@ module.exports = {
             }
         ],
         "@typescript-eslint/member-delimiter-style": [
-            "error",
+            "off",
             {
                 "multiline": {
                     "delimiter": "semi",
@@ -215,7 +215,7 @@ module.exports = {
                     "no-boolean-literal-compare": true,
                     "strict-type-predicates": true,
                     "whitespace": [
-                        true,
+                        false,
                         "check-branch",
                         "check-decl",
                         "check-operator",

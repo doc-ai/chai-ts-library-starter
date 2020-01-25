@@ -26,7 +26,7 @@ module.exports = {
         "@typescript-eslint/consistent-type-assertions": "error",
         "@typescript-eslint/consistent-type-definitions": "off",
         "@typescript-eslint/indent": [
-            "error",
+            "off",
             2,
             {
                 "CallExpression": {

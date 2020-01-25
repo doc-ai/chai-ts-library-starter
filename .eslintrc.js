@@ -15,8 +15,7 @@ module.exports = {
     },
     "plugins": [
       "@typescript-eslint",
-      "@typescript-eslint/tslint",
-      "functional"
+      "@typescript-eslint/tslint"
     ],
   "rules": {
         "@typescript-eslint/adjacent-overload-signatures": "error",

@@ -100,7 +100,6 @@ module.exports = {
                             "allowSingleLine": true
                         }
                     ],
-        "camelcase": "error",
         "comma-dangle": [
             "error",
             "always-multiline"
@@ -182,7 +181,6 @@ module.exports = {
         "no-unused-expressions": "error",
         "no-unused-labels": "error",
         "no-var": "error",
-    "object-curly-spacing": "error",
         "object-shorthand": "error",
         "one-var": [
             "error",

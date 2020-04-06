@@ -29,8 +29,7 @@
     "semantic-release": "semantic-release",
     "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
     "precommit": "lint-staged",
-    "postinstall": "ts-node tools/init",
-    "travis-deploy-once": "travis-deploy-once"
+    "postinstall": "ts-node tools/init"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
@@ -111,7 +110,6 @@
     "rimraf": "3.0.2",
     "semantic-release": "17.0.4",
     "shelljs": "0.8.3",
-    "travis-deploy-once": "5.0.11",
     "ts-jest": "25.3.1",
     "ts-node": "8.8.2",
     "tslint": "6.1.1",

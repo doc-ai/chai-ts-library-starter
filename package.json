@@ -19,7 +19,7 @@
     "tsc": "tsc",
     "build:all": "yarn run build && typedoc --out docs --target es6 --theme minimal --mode file src",
     "build": "rimraf dist && yarn run tsc && yarn run build:parcel",
-    "build:parcel": "parcel build dist/lib/src/--libraryname--.js -d dist/lib --target=node --global --libraryname-- --cache-dir .parcel-cache",    
+    "build:parcel": "parcel build dist/lib/src/--libraryname--.js --no-minify -d dist/lib --target=node --global --libraryname-- --cache-dir .parcel-cache",    
     "jest:debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watch",
